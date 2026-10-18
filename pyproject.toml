@@ -1,0 +1,35 @@
+[project]
+name = "smalllm"
+version = "0.1.0"
+description = "Small Llama-style base LLM in plain PyTorch (CPU-first, optional GPU)"
+readme = "README.md"
+authors = [
+    { name = "Mark Butterly", email = "markbutterly009@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=2.2.0",
+    "numpy>=2.5.4",
+    "pyyaml>=6.0.3",
+    "safetensors>=0.8.0",
+    "tokenizers>=0.23.3",
+    "torch>=2.14.1",
+    "tqdm>=4.70.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+    "transformers>=5.20.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

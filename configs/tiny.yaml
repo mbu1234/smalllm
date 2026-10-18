@@ -1,0 +1,12 @@
+# Train-from-scratch config (shares the SmolLM2 tokenizer, hence the 49k vocab).
+vocab_size: 49152
+hidden_size: 256
+num_layers: 6
+num_heads: 4
+num_kv_heads: 2
+intermediate_size: 704
+head_dim: 64
+rope_theta: 100000.0
+rms_norm_eps: 1.0e-5
+max_position_embeddings: 256
+tie_word_embeddings: true

@@ -1,0 +1,12 @@
+# Smoke-test config: finishes in seconds.
+vocab_size: 49152
+hidden_size: 128
+num_layers: 4
+num_heads: 2
+num_kv_heads: 1
+intermediate_size: 352
+head_dim: 64
+rope_theta: 100000.0
+rms_norm_eps: 1.0e-5
+max_position_embeddings: 128
+tie_word_embeddings: true
